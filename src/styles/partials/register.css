@@ -24,7 +24,7 @@
 }
 
 .register .card::before {
-  content: url("../../assets/primary-fine-detail.svg");
+  content: url("../../assets/svg/primary-fine-detail.svg");
   position: absolute;
   bottom: 0;
   left: 0;

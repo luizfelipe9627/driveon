@@ -32,7 +32,7 @@
 }
 
 .infos .content .paragraphs:nth-child(1)::after {
-  content: url("../../assets/primary-detail.svg");
+  content: url("../../assets/svg/primary-detail.svg");
   position: absolute;
   left: 0;
   top: 0;

@@ -30,7 +30,7 @@
 }
 
 .safety .content .paragraphs a::after {
-  content: url("../../assets/primary-detail-small.svg");
+  content: url("../../assets/svg/primary-detail-small.svg");
   position: absolute;
   left: 0;
   top: 8px;
@@ -45,7 +45,7 @@
 }
 
 .safety .content .title::after {
-  content: url("../../assets/primary-detail.svg");
+  content: url("../../assets/svg/primary-detail.svg");
   position: absolute;
   left: 0;
   top: 0;

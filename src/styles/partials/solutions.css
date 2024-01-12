@@ -9,7 +9,7 @@
 }
 
 .solutions .title::before {
-  content: url("../../assets/primary-detail.svg");
+  content: url("../../assets/svg/primary-detail.svg");
   position: absolute;
   top: 0;
 }

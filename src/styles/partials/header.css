@@ -159,7 +159,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: calc(100vh - 106px);
+    height: calc(100vhw - 106px);
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -173,7 +173,7 @@
   .nav .list {
     flex-direction: column;
     justify-content: space-between;
-    font-size: 28px;
+    font-size: 24px;
     align-items: center;
 
   }
@@ -182,11 +182,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
   }
 
   .nav .login .log-in {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .nav .login .log-in img {
@@ -194,8 +193,8 @@
   }
 
   .nav .login .sign-up {
-    padding: 8px 28px;
-    font-size: 28px;
+    padding: 8px 24px;
+    font-size: 24px;
   }
 
   .nav.active {

@@ -22,7 +22,7 @@
 }
 
 .download .content .title::after {
-  content: url("../../assets/secondary-detail.svg");
+  content: url("../../assets/svg/secondary-detail.svg");
   position: absolute;
   left: 0;
   top: 0;
