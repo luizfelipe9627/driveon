@@ -1,0 +1,204 @@
+.header {
+  padding: 32px 0 56px 0;
+  display: flex;
+  gap: 56px;
+}
+
+.container-size {
+  width: 100%;
+}
+
+.header .logo {
+  width: 180px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list {
+  display: flex;
+  gap: 46px;
+}
+
+.list-item {
+  position: relative;
+}
+
+.list-item a {
+  color: var(--text-color);
+}
+
+.list-item::after {
+  content: "";
+  display: block;
+  background-color: var(--main-color);
+  transition: width 0.3s ease-in-out;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.list-item:hover::after {
+  width: 100%;
+  height: 2px;
+  animation: expandWidth 1s ease-in-out forwards;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.log-in {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.log-in img {
+  width: 16px;
+}
+
+.log-in span {
+  color: var(--main-color);
+  font-weight: 500;
+}
+
+.sign-up {
+  color: #2678FA;
+  border-radius: 8px;
+  border: 1px solid #2678FA;
+  padding: 6px 32px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.sign-up:hover {
+  background-color: #2678FA;
+  color: #fff;
+}
+
+.menu-hamburguer {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .header {
+    justify-content: space-between;
+    padding: 32px 0;
+  }
+
+  .header .logo {
+    width: 150px;
+  }
+
+  .container-size {
+    width: initial;
+  }
+
+  [data-menu="button"] {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+  }
+
+  [data-menu="button"].active {
+    transform: rotate(90deg);
+  }
+
+  #checkbox-menu {
+    position: absolute;
+    display: none;
+  }
+
+  [data-menu="button"] label {
+    position: relative;
+    display: block;
+    height: 20px;
+    width: 25px;
+  }
+
+  [data-menu="button"] span {
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: var(--main-color);
+    border-radius: 1.875rem;
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+  }
+
+  [data-menu="button"] span:nth-child(1) {
+    top: 0;
+  }
+
+  [data-menu="button"] span:nth-child(2) {
+    top: 0.5rem;
+  }
+
+  [data-menu="button"] span:nth-child(3) {
+    top: 1rem;
+  }
+
+  .container-size {
+    position: relative;
+  }
+
+  .nav {
+    padding: 32px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 106px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    opacity: 0;
+    transition: 0.25s ease-in-out;
+    z-index: 1;
+    border-top: 2px solid var(--main-color);
+  }
+
+  .nav .list {
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 28px;
+    align-items: center;
+
+  }
+
+  .nav .login {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  .nav .login .log-in {
+    font-size: 28px;
+  }
+
+  .nav .login .log-in img {
+    width: 22px;
+  }
+
+  .nav .login .sign-up {
+    padding: 8px 28px;
+    font-size: 28px;
+  }
+
+  .nav.active {
+    opacity: 1;
+  }
+}

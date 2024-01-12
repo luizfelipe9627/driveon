@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DriveOn is a mobile carpool platform that connects commuters, providing a comfortable and eco-friendly alternative for daily journeys. Create your account, plan your journeys, meet your driver, and enjoy a stress-free commute. Join us in our mission to reduce traffic jams and CO2 pollution.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    document.documentElement.className += 'js';
+  </script>
+
+  <link rel="stylesheet" href="./src/styles/style.css">
+  <link rel="shortcut icon" href="./src/assets/img/driveon.png" type="image/x-icon">
+  <title>DriveOn</title>
+</head>
+
+<body>
+  <header class="header container">
+    <a href="#">
+      <img class="logo" src="./src/assets/svg/primary-driveon.svg" alt="DriveOn Logo">
+    </a>
+
+    <div class="container-size">
+      <div class="menu-hamburguer" data-menu="button">
+        <input type="checkbox" id="checkbox-menu" />
+        <label htmlFor="checkbox-menu" aria-label="Fechar e abrir o menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <nav class="nav" role="navigation" data-menu="list">
+        <ul class="list">
+          <li class="list-item"><a href="#" aria-label="Drivers">Drivers</a></li>
+          <li class="list-item"><a href="#" aria-label="Passengers">Passengers</a></li>
+          <li class="list-item"><a href="#" aria-label="About Us">About Us</a></li>
+          <li class="list-item"><a href="#" aria-label="Contact">Contact</a></li>
+        </ul>
+
+        <div class="login">
+          <a href="#" class="log-in">
+            <img src="./src/assets/svg/login.svg" alt="User icon">
+            <span>Log in</span>
+          </a>
+
+          <a href="#" class="sign-up">Sign Up</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner" data-anime="scroll">
+      <div class="wrapper container">
+        <div class="content">
+          <h1>Start Your Workday Comfortably</h1>
+          <div class="paragraphs">
+            <p>Get in, sit back and experience the comfort of car that takes you directly to your destination.</p>
+            <p>Arriving work as a sardine with public transport or sweating is a thing of the past.</p>
+          </div>
+
+          <a href="#">Discover</a>
+        </div>
+
+        <img src="./src/assets/svg/banner.svg" alt="Hero">
+      </div>
+    </section>
+
+    <section class="solutions container" data-anime="scroll">
+      <h1 class="title">How to get started?</h1>
+      <div class="cards">
+        <div class="card">
+          <img src="./src/assets/svg/solution-1.svg" alt="Solution 1 icon">
+          <div class="content">
+            <h1>Create your account</h1>
+            <p>Complete your account with some basic information including your home your work location and your working hours.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./src/assets/svg/solution-2.svg" alt="Solution 2 icon">
+          <div class="content">
+            <h1>Plan your journeys</h1>
+            <p>Open the app, click de agenda tab and enter your working hours for the coming week. Then you'll be presented with a list of our drivers.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./src/assets/svg/solution-3.svg" alt="Solution 3 icon">
+          <div class="content">
+            <h1>Meet your driver</h1>
+            <p>Use our chat to get to know your match with our deriver. You'll be picked up at your regular location, or agree on an alternativa pick-up location.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./src/assets/svg/solution-4.svg" alt="Solution 4 icon">
+          <div class="content">
+            <h1>Enjoy your journey</h1>
+            <p>Get in, sit back and enjoy your journey that takes you directly to your destination with some free cup of coffee from us.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="infos" data-anime="scroll">
+      <div class="wrapper container">
+        <img class="img" src="./src/assets/svg/info.svg" alt="Info banner">
+
+        <div class="content">
+          <div class="paragraphs">
+            <p>DriveOn is a mobile carpool platform that effortlessly brings commuters together in one car.</p>
+            <p>Traveling home and work will never be the same again. Our mission is to stop traffic jams and C02 pollution as a result of inefficient car commuting.</p>
+
+            <p>Are you in?</p>
+          </div>
+
+          <a href="#">Learn more<img src="./src/assets/svg/secondary-arrow-detail.svg" alt="Arrow icon">
+          </a>
+        </div>
+    </section>
+
+    <section class="safety" data-anime="scroll">
+      <div class="wrapper container">
+        <div class="content">
+          <h1 class="title">Our commitment to your safety</h1>
+          <div class="paragraphs">
+            <p>With every safety feature we add and every standard in the Community Guide that we uphold, we are committed to protecting you throughout the jorney.</p>
+            <p>Learn more about our Comunnit Guide <a href="#">here.</a></p>
+          </div>
+
+          <a href="#">See all safety features <img src="./src/assets/svg/secondary-arrow-detail.svg" alt="Arrow icon">
+          </a>
+        </div>
+
+        <img class="img" src="./src/assets/svg/safety.svg" alt="Safety banner">
+    </section>
+
+    <section class="download" data-anime="scroll">
+      <div class="wrapper container">
+        <img class="img" src="./src/assets/svg/download.svg" alt="Download banner">
+
+        <div class="content">
+          <h1 class="title">Download the DriveOn application to get more ebenefits and experience</h1>
+
+          <div class="stores">
+            <a href="#"> <img src="./src/assets/svg/clay-store.svg" alt="Clay Store"></a>
+            <a href="#"><img src="./src/assets/svg/play-app.svg" alt="Play App"></a>
+          </div>
+        </div>
+    </section>
+
+    <section class="register container" data-anime="scroll">
+      <div class="card">
+        <h1>Register to be a driver partner</h1>
+        <img src="./src/assets/svg/primary-arrow-detail.svg" alt="Arrow to right">
+      </div>
+
+      <div class="card">
+        <h1>Register to start your journey</h1>
+        <img src="./src/assets/svg/primary-arrow-detail.svg" alt="Arrow to right">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper container">
+      <div class="top">
+        <div class="informations">
+          <a href="#">
+            <img class="logo" src="./src/assets/svg/secondary-driveon.svg" alt="DriveOn Logo">
+          </a>
+
+          <div class="options">
+            <div class="resolution">
+              <img src="./src/assets/svg/resolution.svg" alt="Resolution icon">
+              <a href="#">Resolution Center</a>
+            </div>
+
+            <div class="language">
+              <img src="./src/assets/svg/language.svg" alt="Language icon">
+              <a href="#">English</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="about">
+          <h1>About us</h1>
+
+          <ul class="list">
+            <li class="list-item"><a href="#">Newsroom</a></li>
+            <li class="list-item"><a href="#">Investor relations</a></li>
+            <li class="list-item"><a href="#">Global citizenship</a></li>
+            <li class="list-item"><a href="#">Safety</a></li>
+            <li class="list-item"><a href="#">Blog</a></li>
+            <li class="list-item"><a href="#">Career</a></li>
+          </ul>
+        </div>
+
+        <div class="products">
+          <h1>Our products</h1>
+
+          <ul class="list">
+            <li class="list-item"><a href="#">Take a trip</a></li>
+            <li class="list-item"><a href="#">Drive it</a></li>
+            <li class="list-item"><a href="#">Eat</a></li>
+            <li class="list-item"><a href="#">DriveOn for Business</a></li>
+            <li class="list-item"><a href="#">DriveOn Freight</a></li>
+            <li class="list-item"><a href="#">Health</a></li>
+            <li class="list-item"><a href="#">DriveOn Air</a></li>
+            <li class="list-item"><a href="#">Advanced Technologies Group</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <p>© 2019 DriveOn Technologies Inc.</p>
+
+        <div class="social-medias">
+          <a href="#"><img src="./src/assets/svg/facebook.svg" alt="Facebook icon"></a>
+          <a href="#"><img src="./src/assets/svg/twitter.svg" alt="Twitter icon"></a>
+          <a href="#"><img src="./src/assets/svg/youtube.svg" alt="Youtube icon"></a>
+          <a href="#"><img src="./src/assets/svg/instagram.svg" alt="Instagram icon"></a>
+          <a href="#"><img src="./src/assets/svg/linkedin.svg" alt="Linkedin icon"></a>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <script type="module" src="./src/scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+.register {
+  display: flex;
+  justify-content: space-around;
+  margin: 80px auto;
+}
+
+.register .card {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.register .card h1 {
+  color: var(--main-color);
+  font-weight: 500;
+  max-width: 220px;
+  margin-right: 40px;
+  font-size: 28px;
+}
+
+.register .card img {
+  height: max-content;
+}
+
+.register .card::before {
+  content: url("../../assets/primary-fine-detail.svg");
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .register {
+    gap: 40px;
+    margin: 40px auto;
+  }
+
+  .register .card {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+  }
+
+  .register .card h1 {
+    margin-right: 0;
+    margin-bottom: 20px;
+    max-width: initial;
+  }
+}
+
+@media (max-width: 480px) {
+  .register {
+    flex-direction: column;
+  }
+}

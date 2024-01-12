@@ -1,0 +1,23 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.container {
+  width: 100%;
+  max-width: 85vw;
+  margin: 0 auto;
+}
+
+.js [data-anime='scroll'] {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: .3s;
+}
+
+.js [data-anime='scroll'].active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: .3s;
+}

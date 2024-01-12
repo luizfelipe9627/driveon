@@ -1,0 +1,97 @@
+.safety {
+  display: flex;
+  position: relative;
+  margin-top: 100px;
+}
+
+.safety .wrapper {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  margin-top: 140px;
+}
+
+.safety .content {
+  position: relative;
+}
+
+.safety .content .paragraphs {
+  color: var(--text-color);
+  font-size: 18px;
+  max-width: 46ch;
+  line-height: 1.5;
+}
+
+.safety .content .paragraphs a {
+  color: var(--main-color);
+  font-weight: 700;
+  position: relative;
+  font-size: 16px;
+}
+
+.safety .content .paragraphs a::after {
+  content: url("../../assets/primary-detail-small.svg");
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+.safety .content .title {
+  color: var(--main-color);
+  font-size: 28px;
+  font-weight: 600;
+  max-width: 16ch;
+  padding: 88px 0;
+}
+
+.safety .content .title::after {
+  content: url("../../assets/primary-detail.svg");
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.safety .img {
+  position: absolute;
+  right: 0;
+  top: -140px;
+  width: 40%;
+}
+
+.safety .content a {
+  display: inline-flex;
+  color: #2678FA;
+  font-weight: 600;
+  font-size: 18px;
+  align-items: center;
+  gap: 8px;
+  margin-top: 28px;
+  font-weight: 500;
+}
+
+.safety .content a:hover:not(:first-child) {
+  text-decoration: underline;
+}
+
+.safety .content a img {
+  margin-top: 6px;
+}
+
+@media (max-width: 768px) {
+  .safety .wrapper {
+    height: auto;
+    margin-top: initial;
+  }
+
+  .safety .content .title {
+    padding: 64px 0 24px 0;
+  }
+
+  .safety .content .paragraphs {
+    max-width: initial;
+  }
+
+  .safety .img {
+    display: none;
+  }
+}

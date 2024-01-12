@@ -1,0 +1,137 @@
+.footer {
+  background-image: url("../../assets/svg/banner-footer.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .wrapper .top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 180px 0 100px 0;
+}
+
+.footer .wrapper .top h1 {
+  font-weight: 300;
+  color: var(--white-color);
+  font-size: 28px;
+  margin-bottom: 32px;
+}
+
+.footer .informations {
+  width: 30%;
+}
+
+.footer .informations .options {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer .informations div {
+  display: flex;
+  gap: 8px;
+}
+
+.footer .informations a,
+.footer .list a {
+  color: var(--white-color);
+  font-size: 16px;
+}
+
+.footer .informations a:hover,
+.footer .list a:hover {
+  text-decoration: underline;
+}
+
+.footer .informations,
+.footer .about,
+.footer .products {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .informations .logo {
+  width: 185px;
+  margin-bottom: 24px;
+}
+
+.footer .list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 16px;
+  color: var(--white-color);
+}
+
+.footer .bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--white-color);
+  padding: 32px 0;
+  color: var(--white-color);
+}
+
+.footer .bottom .social-medias {
+  display: flex;
+  gap: 16px;
+}
+
+.footer .bottom .social-medias img {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  .footer .wrapper .top {
+    margin: 100px 0 0 0;
+  }
+
+  .footer .wrapper .top h1 {
+    margin-bottom: initial;
+  }
+
+  .footer .informations {
+    width: 100%;
+  }
+
+  .footer .informations .options {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 32px;
+  }
+
+  .footer .informations .logo {
+    margin-bottom: 0;
+  }
+
+  .footer .about {
+    margin-top: 32px;
+  }
+
+  .footer .about,
+  .footer .products {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .footer .list {
+    margin-top: 24px;
+  }
+
+  .footer .bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .footer .bottom .social-medias {
+    margin-top: 16px;
+  }
+}

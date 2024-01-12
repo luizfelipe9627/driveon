@@ -1,0 +1,96 @@
+.infos {
+  display: flex;
+  position: relative;
+  margin-top: 100px;
+}
+
+.infos .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100vh;
+}
+
+.infos .content {
+  position: relative;
+  width: 60%;
+}
+
+.infos .content .paragraphs {
+  color: var(--text-color);
+  font-size: 18px;
+  max-width: 46ch;
+  line-height: 1.5;
+}
+
+.infos .content .paragraphs p:nth-child(1) {
+  margin-top: 120px;
+}
+
+.infos .content .paragraphs p:nth-child(3) {
+  margin: 24px 0 34px 0;
+}
+
+.infos .content .paragraphs:nth-child(1)::after {
+  content: url("../../assets/primary-detail.svg");
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.infos .img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40%;
+}
+
+.infos .content a {
+  display: inline-flex;
+  color: #2678FA;
+  font-weight: 600;
+  font-size: 18px;
+  align-items: center;
+  gap: 8px;
+}
+
+.infos .content a:hover {
+  text-decoration: underline;
+}
+
+.infos .content a img {
+  margin-top: 6px;
+}
+
+@media (max-width: 1440px) {
+  .infos .content {
+    width: 45%;
+  }
+
+  .infos .content .paragraphs p:nth-child(1) {
+    margin-top: 64px;
+  }
+
+  .infos .content .paragraphs {
+    max-width: initial;
+  }
+
+  .infos .img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .infos .wrapper {
+    justify-content: flex-start;
+    height: initial;
+  }
+
+  .infos .content {
+    width: initial;
+  }
+
+  .infos .img {
+    display: none;
+  }
+}

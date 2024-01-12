@@ -1,0 +1,63 @@
+.download {
+  background-image: url("../../assets/svg/banner-download.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.download .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.download .content .title {
+  padding-top: 80px;
+  position: relative;
+  max-width: 32ch;
+  font-weight: 600;
+  font-size: 24px;
+  color: #4D128F;
+}
+
+.download .content .title::after {
+  content: url("../../assets/secondary-detail.svg");
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.download .img {
+  width: 40%;
+}
+
+.download .content .stores {
+  display: flex;
+  gap: 40px;
+  margin-top: 42px;
+}
+
+@media (max-width: 1140px) {
+  .download .img {
+    width: 50%;
+  }
+
+  .download .wrapper {
+    gap: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .download {
+    margin-top: initial;
+  }
+
+  .download .content .title {
+    padding-top: 64px;
+  }
+
+  .download .img {
+    display: none;
+  }
+}
