@@ -2,6 +2,7 @@
   background-image: url("../../assets/svg/banner-footer.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: var(--main-color);
 }
 
 .footer .wrapper {
@@ -13,14 +14,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 180px 0 100px 0;
+  margin: 11.25rem 0 6.25rem 0;
 }
 
 .footer .wrapper .top h1 {
   font-weight: 300;
   color: var(--white-color);
-  font-size: 28px;
-  margin-bottom: 32px;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
 }
 
 .footer .informations {
@@ -30,18 +31,18 @@
 .footer .informations .options {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 2rem;
 }
 
 .footer .informations div {
   display: flex;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .footer .informations a,
 .footer .list a {
   color: var(--white-color);
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .footer .informations a:hover,
@@ -57,39 +58,39 @@
 }
 
 .footer .informations .logo {
-  width: 185px;
-  margin-bottom: 24px;
+  width: 11.5625rem;
+  margin-bottom: 1.5rem;
 }
 
 .footer .list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  font-size: 16px;
+  gap: 1.5rem;
+  font-size: 1rem;
   color: var(--white-color);
 }
 
 .footer .bottom {
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid var(--white-color);
-  padding: 32px 0;
+  border-top: 0.0625rem solid var(--white-color);
+  padding: 2rem 0;
   color: var(--white-color);
 }
 
 .footer .bottom .social-medias {
   display: flex;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .footer .bottom .social-medias img {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 @media (max-width: 768px) {
   .footer .wrapper .top {
-    margin: 100px 0 0 0;
+    margin: 6.25rem 0 0 0;
   }
 
   .footer .wrapper .top h1 {
@@ -103,7 +104,7 @@
   .footer .informations .options {
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 32px;
+    margin-top: 2rem;
   }
 
   .footer .informations .logo {
@@ -111,27 +112,27 @@
   }
 
   .footer .about {
-    margin-top: 32px;
+    margin-top: 2rem;
   }
 
   .footer .about,
   .footer .products {
     width: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
   }
 
   .footer .list {
-    margin-top: 24px;
+    margin-top: 1.5rem;
   }
 
   .footer .bottom {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 16px;
+    gap: 1rem;
   }
 
   .footer .bottom .social-medias {
-    margin-top: 16px;
+    margin-top: 1rem;
   }
 }

@@ -1,10 +1,10 @@
 .solutions .title {
   text-align: center;
-  margin-top: 100px;
-  padding: 88px 0;
+  margin-top: 6.25rem;
+  padding: 5.5rem 0;
   position: relative;
   color: var(--main-color);
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -18,8 +18,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: baseline;
-  gap: 80px;
-  margin-bottom: 42px;
+  gap: 5rem;
+  margin-bottom: 2.625rem;
 }
 
 .solutions .card {
@@ -37,31 +37,32 @@
 
 .solutions .card .content h1 {
   color: var(--main-color);
-  font-size: 22px;
+  font-size: 1.375rem;
   max-width: 12ch;
-  margin: 42px 0;
+  margin: 2.625rem 0;
 }
 
 .card .content p {
   color: var(--text-color);
-  font-size: 16px;
+  font-size: 1rem;
   max-width: 24ch;
 }
 
 @media (max-width: 1140px) {
   .solutions .cards {
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 2.5rem;
   }
 }
 
 @media (max-width: 768px) {
   .solutions .title {
-    padding-top: 64px;
+    padding-top: 4rem;
+    margin-top: 1.25rem;
   }
 
   .solutions .cards {
     grid-template-columns: repeat(1, 1fr);
-    gap: 40px;
+    gap: 2.5rem;
   }
 }

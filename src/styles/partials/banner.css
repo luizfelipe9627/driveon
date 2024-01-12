@@ -11,16 +11,16 @@
 
 .banner .content h1 {
   color: var(--main-color);
-  font-size: 48px;
+  font-size: 3rem;
   max-width: 10ch;
   font-weight: 600;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .banner .content .paragraphs {
-  margin: 42px 0 48px 0;
+  margin: 2.625rem 0 3rem 0;
   color: var(--text-color);
-  font-size: 18px;
+  font-size: 1.125rem;
   max-width: 42ch;
 }
 
@@ -34,11 +34,11 @@
 .banner .content a {
   background: linear-gradient(76deg, #7D21E8 -42.09%, #26E0FA 83.75%);
   color: var(--white-color);
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
   border: none;
-  padding: 14px 28px;
-  border-radius: 8px;
+  padding: 0.875rem 1.75rem;
+  border-radius: 0.5rem;
   transition: filter 0.2s;
 }
 
@@ -48,7 +48,7 @@
 
 @media (max-width: 1440px) {
   .banner .wrapper {
-    height: calc(100vh - 150px);
+    height: calc(100vh - 9.375rem);
   }
   .banner .content {
     width: 50%;

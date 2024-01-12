@@ -1,7 +1,7 @@
 .header {
-  padding: 32px 0 56px 0;
+  padding: 2rem 0 3.5rem 0;
   display: flex;
-  gap: 56px;
+  gap: 3.5rem;
 }
 
 .container-size {
@@ -9,7 +9,7 @@
 }
 
 .header .logo {
-  width: 180px;
+  width: 11.25rem;
 }
 
 .nav {
@@ -20,7 +20,7 @@
 
 .list {
   display: flex;
-  gap: 46px;
+  gap: 2.875rem;
 }
 
 .list-item {
@@ -36,33 +36,33 @@
   display: block;
   background-color: var(--main-color);
   transition: width 0.3s ease-in-out;
-  border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0.125rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
   position: absolute;
-  bottom: -4px;
+  bottom: -0.25rem;
   left: 0;
 }
 
 .list-item:hover::after {
   width: 100%;
-  height: 2px;
+  height: 0.125rem;
   animation: expandWidth 1s ease-in-out forwards;
 }
 
 .login {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .log-in {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .log-in img {
-  width: 16px;
+  width: 1rem;
 }
 
 .log-in span {
@@ -72,16 +72,16 @@
 
 .sign-up {
   color: #2678FA;
-  border-radius: 8px;
-  border: 1px solid #2678FA;
-  padding: 6px 32px;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #2678FA;
+  padding: 0.375rem 2rem;
   transition: all 0.3s ease-in-out;
   font-weight: 500;
 }
 
 .sign-up:hover {
   background-color: #2678FA;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .menu-hamburguer {
@@ -91,11 +91,11 @@
 @media (max-width: 1100px) {
   .header {
     justify-content: space-between;
-    padding: 32px 0;
+    padding: 2rem 0;
   }
 
   .header .logo {
-    width: 150px;
+    width: 9.375rem;
   }
 
   .container-size {
@@ -122,14 +122,14 @@
   [data-menu="button"] label {
     position: relative;
     display: block;
-    height: 20px;
-    width: 25px;
+    height: 1.25rem;
+    width: 1.5625rem;
   }
 
   [data-menu="button"] span {
     position: absolute;
     display: block;
-    height: 5px;
+    height: 0.3125rem;
     width: 100%;
     background-color: var(--main-color);
     border-radius: 1.875rem;
@@ -154,26 +154,26 @@
   }
 
   .nav {
-    padding: 32px;
+    padding: 2rem;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: calc(100vhw - 106px);
+    height: calc(100dvh - 6.625rem);
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: var(--white-color);
     opacity: 0;
     transition: 0.25s ease-in-out;
     z-index: 1;
-    border-top: 2px solid var(--main-color);
+    border-top: 0.125rem solid var(--main-color);
   }
 
   .nav .list {
     flex-direction: column;
     justify-content: space-between;
-    font-size: 24px;
+    font-size: 1.5rem;
     align-items: center;
 
   }
@@ -185,16 +185,16 @@
   }
 
   .nav .login .log-in {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .nav .login .log-in img {
-    width: 22px;
+    width: 1.375rem;
   }
 
   .nav .login .sign-up {
-    padding: 8px 24px;
-    font-size: 24px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5rem;
   }
 
   .nav.active {

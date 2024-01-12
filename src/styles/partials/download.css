@@ -13,11 +13,11 @@
 }
 
 .download .content .title {
-  padding-top: 80px;
+  padding-top: 5rem;
   position: relative;
   max-width: 32ch;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #4D128F;
 }
 
@@ -34,8 +34,8 @@
 
 .download .content .stores {
   display: flex;
-  gap: 40px;
-  margin-top: 42px;
+  gap: 2.5rem;
+  margin-top: 2.625rem;
 }
 
 @media (max-width: 1140px) {
@@ -44,7 +44,7 @@
   }
 
   .download .wrapper {
-    gap: 48px;
+    gap: 3rem;
   }
 }
 
@@ -54,7 +54,7 @@
   }
 
   .download .content .title {
-    padding-top: 64px;
+    padding-top: 4rem;
   }
 
   .download .img {
